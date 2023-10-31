@@ -11,7 +11,7 @@ $tabNotes = array(
     "raconx"=> array(15,15,19)
 );
 
-echo "1) Total des notes des élèves\n2) Moyenne de chaque élève\n3) Notes et moyenne d'un élève en particulier\n";
+echo "1) Total des notes des élèves\n2) Moyenne de chaque élève\n3) Notes et moyenne d'un élève en particulier\n4) Quitter\n";
 $question = readline("Entrez un numéro de question : ");
 while (!is_numeric($question) or $question < 1 or $question > 3) {
     $question = readline("Entrez un numéro valide : ");
@@ -49,5 +49,7 @@ switch($question) {
         } else {
             echo "L'élève n'existe pas!";
         }
+    case 4 :
+        break;
 }
 
