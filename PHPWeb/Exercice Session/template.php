@@ -18,7 +18,7 @@
 <section>
     <nav>
         <ul>
-            <li><a href=".">Home</a></li>
+            <li><a href="."><span class="link link1">Home</span></a></li>
             <?= $nav?>
         </ul>
     </nav>

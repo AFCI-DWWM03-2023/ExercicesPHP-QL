@@ -8,6 +8,8 @@
 footer {
     text-align: center;
     padding: 30px;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -24,11 +26,64 @@ img {
 }
 
 section{
+    margin: 50px 0;
+    width: 100vw;
     display: flex;
+    justify-content: center;
 }
 
-.nav {
+.content {
+    background-color: #CCC;
+    width: 60%;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+ul {
     display: flex;
     flex-direction: column;
-    width: 200px;
+}
+
+li {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 2px 0px;
+    list-style: none;
+    width: 150px;
+}
+
+li:last-of-type{
+    background-color: red;
+}
+
+li:first-of-type{
+    text-align: center;
+    background-color: pink;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    margin: 5px;
+}
+
+.link1 {
+    margin: 5px 0;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.btndata {
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    background :linear-gradient(to bottom, #88C, #44C);
 }

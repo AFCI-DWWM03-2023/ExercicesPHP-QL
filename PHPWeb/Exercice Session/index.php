@@ -3,7 +3,7 @@ ob_start();
 session_start();
 ?>
 
-<div>
+<div class="content">
     <?php
     $nav = "";
     if (isset($_SESSION["table"])) {
@@ -19,17 +19,17 @@ session_start();
     }
 
     if (!isset($_SESSION["table"]) && !isset($_GET["add"])) {
-        echo '<a href="?add">Ajouter des données</a>';
+        echo '<a href="?add"><span class="btndata">Ajouter des données</span></a>';
     }
 
 
     if (isset($table)) {
         $nav = '
-        <li><a href="?debugging">Débogage</a></li>
-        <li><a href="?concatenation">Concaténation</a></li>
-        <li><a href="?loop">Boucle</a></li>
-        <li><a href="?function">Fonction</a></li>
-        <li><a href="?del">Supprimer</a></li>';
+        <li><a href="?debugging"><span class="link">Débogage</span></a></li>
+        <li><a href="?concatenation"><span class="link">Concaténation</span></a></li>
+        <li><a href="?loop"><span class="link">Boucle</span></a></li>
+        <li><a href="?function"><span class="link">Fonction</span></a></li>
+        <li><a href="?del"><span class="link linklast">Supprimer</span></a></li>';
 
         if (isset($_GET["debugging"])) {
             echo "<pre>";
